@@ -16,10 +16,15 @@ module.exports = {
         darkLavander: "#734f96",
         white: "#ffffff",
         lavenderBlue: "#c0b7e8",
+        deepPurple: "#343045",
+        paleLavenderBlue:"#CAD1E9", 
       },
       backgroundImage: {
-        footerGradient:
+        violetGradient:
           "linear-gradient(0deg, #343045 0%, #c0b7e8 35%, #8176af 69%, #343045 100%)",
+        darkGradient: "linear-gradient(0deg, #21223C 0%, #0B0B26 100%)",
+        raindowGradient: "linear-gradient(0deg, #B67EFD 0%, #F088D2 50%, #FFAD8B 100%)",
+        grayGradient: "linear-gradient(0deg, #1B1C36 0%, #70717A 100%)"
       },
     },
     screens: {
