@@ -17,14 +17,17 @@ module.exports = {
         white: "#ffffff",
         lavenderBlue: "#c0b7e8",
         deepPurple: "#343045",
-        paleLavenderBlue:"#CAD1E9", 
+        paleLavenderBlue: "#CAD1E9",
       },
       backgroundImage: {
         violetGradient:
           "linear-gradient(0deg, #343045 0%, #c0b7e8 35%, #8176af 69%, #343045 100%)",
+        darkVioletGradient:
+          "linear-gradient(0deg, #1e1b2d 0%, #a098cf 35%, #6b6290 69%, #1e1b2d 100%)",
         darkGradient: "linear-gradient(0deg, #21223C 0%, #0B0B26 100%)",
-        raindowGradient: "linear-gradient(0deg, #B67EFD 0%, #F088D2 50%, #FFAD8B 100%)",
-        grayGradient: "linear-gradient(0deg, #1B1C36 0%, #70717A 100%)"
+        raindowGradient:
+          "linear-gradient(0deg, #B67EFD 0%, #F088D2 50%, #FFAD8B 100%)",
+        grayGradient: "linear-gradient(0deg, #1B1C36 0%, #70717A 100%)",
       },
     },
     screens: {
