@@ -9,6 +9,8 @@ interface ButtonProps {
   disabled?: boolean;
   onClick?: () => void;
   bordered?: boolean;
+  href?: string;
+  tag?: "a" | "button"
 }
 
 const Button: FC<ButtonProps> = ({
@@ -20,7 +22,10 @@ const Button: FC<ButtonProps> = ({
   disabled,
   onClick,
   bordered = false,
+  href,
+  tag = "button",
 }) => {
+  const Tag = tag;
   const finalBackground = bordered ? "transparent" : background;
   const backgroundClass =
     finalBackground === "violetGradient"
@@ -47,14 +52,15 @@ const Button: FC<ButtonProps> = ({
       ? "hover:bg-violetGradient hover:text-deepPurple hover:border-0 transition-colors duration-300"
       : "";
   return (
-    <button
+    <Tag
       className={`${className} ${disabledBg} ${backgroundClass} ${borderClass} ${textClass} ${widthClass} ${hoverClass} py-[16px] px-[24px] rounded-[40px] flex items-center justify-center disabled:cursor-not-allowed group`}
       type={type}
       onClick={onClick}
       disabled={disabled}
+      href={href}
     >
       {text}
-    </button>
+    </Tag>
   );
 };
 
