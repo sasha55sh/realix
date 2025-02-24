@@ -49,7 +49,7 @@ const Button: FC<ButtonProps> = ({
     finalBackground === "violetGradient"
       ? "hover:bg-darkVioletGradient hover:text-white transition-colors duration-300"
       : bordered
-      ? "hover:bg-violetGradient hover:text-deepPurple hover:border-0 transition-colors duration-300"
+      ? "hover:bg-violetGradient hover:text-deepPurple hover:border-transparent transition-colors duration-300"
       : "";
   return (
     <Tag
