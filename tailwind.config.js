@@ -29,6 +29,7 @@ module.exports = {
           "linear-gradient(0deg, #B67EFD 0%, #F088D2 50%, #FFAD8B 100%)",
         grayGradient: "linear-gradient(0deg, #1B1C36 0%, #70717A 100%)",
         useCardGradient: "radial-gradient(circle, #433D60 10%, #211E2E 100%)",
+        heroGradient: "radial-gradient(circle, #3A3456 0%, #211E2E 100%)",
       },
     },
     screens: {
