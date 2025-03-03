@@ -30,6 +30,7 @@ module.exports = {
         grayGradient: "linear-gradient(0deg, #1B1C36 0%, #70717A 100%)",
         useCardGradient: "radial-gradient(circle, #433D60 10%, #211E2E 100%)",
         heroGradient: "radial-gradient(circle, #3A3456 0%, #211E2E 100%)",
+        formGradient: "radial-gradient(circle, #403A5F 0%, #211E2E 100%)",
       },
     },
     screens: {
