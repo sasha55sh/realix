@@ -35,7 +35,7 @@ const Footer = () => {
           />
         </Link>
 
-        <hr className="hidden bg-footerGradient h-[110px] w-[3px] border-0 md:block" />
+        <hr className="hidden bg-violetGradient h-[110px] w-[3px] border-0 md:block" />
         <ul className="hidden space-y-2 md:block">
           {links.map(({ href, text }, index) => (
             <li
@@ -46,7 +46,7 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <hr className="hidden bg-footerGradient h-[110px] w-[3px] border-0 mini:block" />
+        <hr className="hidden bg-violetGradient h-[110px] w-[3px] border-0 mini:block" />
         <ul className="hidden space-y-2 mini:block">
           {links.map(({ href, text }, index) => (
             <li
@@ -57,7 +57,7 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <hr className="hidden bg-footerGradient h-[110px] w-[3px] border-0 mini:block" />
+        <hr className="hidden bg-violetGradient h-[110px] w-[3px] border-0 mini:block" />
         <div className="mt-[10px] mini:mt-0">
           <p>SOCIALIZE WITH REALIX</p>
           <div className="flex gap-[10px] justify-center mt-[10px]">
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="bg-footerGradient h-[1px] w-full border-0 my-[25px]" />
+      <hr className="bg-violetGradient h-[1px] w-full border-0 my-[25px]" />
       <p className="text-center">
         {currentYear} © REALIX - BY OLEKSANDRA SHAPOVALIUK - ALL RIGHTS RESERVED
       </p>
