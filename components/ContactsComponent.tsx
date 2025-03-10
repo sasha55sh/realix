@@ -3,27 +3,27 @@ import Image from "next/image";
 
 interface ContactsProps {
   className?: string;
-  image: string;
+  src: string;
+  alt: string;
   title: string;
   description: string;
 }
 
 const ContactsComponent: FC<ContactsProps> = ({
   className,
-  image,
+  src,
+  alt,
   title,
   description,
 }) => {
   return (
-    <>
-      <div className={`${className} text-white flex space-x-[10px]`}>
-        <Image src={image} alt="address-elem" />
-        <div>
-          <h3 className="text-[24px] font-bold">{title}</h3>
-          <p className="text-center">{description}</p>
-        </div>
+    <li className={`${className} text-white flex space-x-[10px] items-center`}>
+      <Image src={src} alt={alt} className="h-[40px] w-[40px]" />
+      <div>
+        <h3 className="text-[18px] font-bold xl:text-[24px]">{title}</h3>
+        <p className="text-center">{description}</p>
       </div>
-    </>
+    </li>
   );
 };
 

@@ -16,7 +16,7 @@ const Header = () => {
   const HeaderNavigation: FC<{ className?: string }> = ({ className }) => {
     return (
       <div className={`${className} flex flex-row justify-between`}>
-        <nav className="hidden lg:flex flex-row text-white font-bold text-[12px]">
+        <nav className="hidden flex-row text-white font-bold text-[12px] lg:flex">
           {navData.map((item, index) => (
             <div key={index} className="relative group mx-[15px]">
               <Button
@@ -47,8 +47,8 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <div className="flex items-center justify-between p-[15px]">
+    <header className="sticky top-0 z-10">
+      <div className="flex items-center justify-between p-[15px] bg-[#050520]/60">
         <HeaderLogo />
         <HeaderNavigation />
       </div>
