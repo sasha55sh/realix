@@ -48,15 +48,13 @@ const HeroSection: FC = () => {
             Improve your <br />
             <span className="text-pearlBlue">lifestyle</span>
           </h1>
-          <p className="hidden max-w-[495px] md:block">
+          <p className="text-center max-w-[495px] md:text-left">
             With immersive visuals and cutting-edge technology, users can
             explore new skills, train efficiently, and enhance creativity.
-            Whether it’s virtual travel, interactive learning, or remote
-            collaboration, Realix VR transforms daily life
-          </p>
-          <p className="text-center max-w-[420px] md:hidden">
-            With immersive visuals and cutting-edge tech, users can learn,
-            train, and boost creativity
+            <span className="hidden md:block">
+              Whether it’s virtual travel, interactive learning, or remote
+              collaboration, Realix VR transforms daily life
+            </span>
           </p>
           <Button text="Choose your plan" background="darkGradient" />
         </div>
@@ -81,19 +79,19 @@ const HeroSection: FC = () => {
       </ul>
 
       <div className="h-[100px] max-w-[500px] m-auto bg-heroGradient rounded-full mt-[30px] lg:hidden">
-      <Carousel slide={false} indicators={false}>
-        {contactData.map((item) => (
-          <ContactsComponent
-            key={item.id}
-            src={item.src}
-            alt={item.alt}
-            title={item.title}
-            description={item.description}
-            className="justify-center"
-          />
-        ))}
-      </Carousel>
-    </div>
+        <Carousel slide={false} indicators={false}>
+          {contactData.map((item) => (
+            <ContactsComponent
+              key={item.id}
+              src={item.src}
+              alt={item.alt}
+              title={item.title}
+              description={item.description}
+              className="justify-center"
+            />
+          ))}
+        </Carousel>
+      </div>
       <Image
         src={Background}
         alt="Background"
