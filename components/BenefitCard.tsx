@@ -19,17 +19,21 @@ const BenefitCart: FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`${className} flex flex-col items-center rounded-xl max-w-[310px] max-h-[510px] bg-useCardGradient py-[40px] px-[30px] space-y-4`}
+      className={`${className} flex flex-col items-center rounded-xl max-w-[230px] bg-useCardGradient py-[40px] px-[30px] space-y-4 xl:max-w-[310px]`}
     >
       <Image
         src={imageSrc}
         alt={imageAlt}
         className="border border-[12px] border-[#0e0e0e]/30 rounded-full "
       />
-      <h2 className="font-bold text-[24px] text-white">{title}</h2>
-      <hr className="w-[155px] border-t border-white/30"/>
+      <h2 className="font-bold text-[24px] text-white uppercase">{title}</h2>
+      <hr className="w-[155px] border-t border-white/30" />
       <p className="text-white text-[12px]">{description}</p>
-      <Button background="violetGradient" text="TRY IT NOW" className="h-[50px]"/>
+      <Button
+        background="violetGradient"
+        text="TRY IT NOW"
+        className="h-[50px]"
+      />
     </div>
   );
 };
