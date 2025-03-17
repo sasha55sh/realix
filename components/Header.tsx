@@ -5,11 +5,11 @@ import Image from "next/image";
 import Button from "./ButtonComponent";
 
 const navData = [
-  { link: "/text", text: "Text" },
-  { link: "/text", text: "Text" },
-  { link: "/text", text: "Text" },
-  { link: "/text", text: "Text" },
-  { link: "/text", text: "Text" },
+  { link: "#about", text: "About" },
+  { link: "#whyUse", text: "Why use?" },
+  { link: "#howBuild", text: "How build?" },
+  { link: "#reviews", text: "Reviews" },
+  { link: "#pricing", text: "Pricing" },
 ];
 
 const Header = () => {
@@ -31,8 +31,14 @@ const Header = () => {
         </nav>
 
         <div className="whitespace-nowrap flex gap-[15px] justify-end">
-          <Button text="CONTACT US" bordered className="hidden mini:block"/>
-          <Button text="JOIN REALIX" background="violetGradient" />
+          <Button
+            tag="a"
+            text="CONTACT US"
+            // href={"#contacts"}
+            bordered
+            className="hidden mini:block"
+          />
+          <Button tag="a" text="JOIN REALIX" href={"#join"} background="violetGradient" />
         </div>
       </div>
     );
@@ -41,7 +47,7 @@ const Header = () => {
   const HeaderLogo = () => {
     return (
       <Link href="/">
-        <Image src={Logo} alt="Logo"/>
+        <Image src={Logo} alt="Logo" />
       </Link>
     );
   };

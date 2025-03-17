@@ -34,9 +34,11 @@ const PriceCard: FC<PriceProps> = ({
         ))}
       </ol>
       <Button
+      tag="a"
         background="grayGradient"
         text="Request acess"
         className="mini:w-[80%] mb-[5px]"
+        href={"#join"}
       />
       <p>{discount}</p>
     </div>

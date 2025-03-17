@@ -15,12 +15,19 @@ const socialObject = [
   { href: "https://www.youtube.com/", title: "Youtube", image: Youtube },
 ];
 
-const links = [
-  { href: "/", text: "Home" },
-  { href: "/about", text: "About" },
-  { href: "/services", text: "Services" },
-  { href: "/contact", text: "Contact" },
+const mainLinks = [
+  { href: "/", text: "Main" },
+  { href: "#about", text: "About us" },
+  { href: "#reviews", text: "Reviews" },
+  { href: "#pricing", text: "Pricing" },
 ];
+
+const additionalLink = [
+  { href: "#join", text: "Join us" },
+  { href: "#howBuild", text: "How build?" },
+  { href: "#whyUse", text: "Why use?" },
+]
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -37,7 +44,7 @@ const Footer = () => {
 
         <hr className="hidden bg-violetGradient h-[110px] w-[3px] border-0 md:block" />
         <ul className="hidden space-y-2 md:block">
-          {links.map(({ href, text }, index) => (
+          {additionalLink.map(({ href, text }, index) => (
             <li
               key={index}
               className="transition-transform duration-300 hover:scale-105 hover:text-lavenderBlue"
@@ -48,7 +55,7 @@ const Footer = () => {
         </ul>
         <hr className="hidden bg-violetGradient h-[110px] w-[3px] border-0 mini:block" />
         <ul className="hidden space-y-2 mini:block">
-          {links.map(({ href, text }, index) => (
+          {mainLinks.map(({ href, text }, index) => (
             <li
               key={index}
               className="transition-transform duration-300 hover:scale-105 hover:text-lavenderBlue"

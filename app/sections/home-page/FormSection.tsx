@@ -78,7 +78,7 @@ const FormSection = () => {
   };
 
   return (
-    <section className="container bg-formGradient text-white flex flex-col items-center rounded-3xl py-[40px]">
+    <section id="join" className="container bg-formGradient text-white flex flex-col items-center rounded-3xl py-[40px]">
       <h1 className="uppercase font-bold text-[36px] cursor-default">
         join realix
       </h1>

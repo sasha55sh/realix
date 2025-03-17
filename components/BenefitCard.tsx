@@ -30,9 +30,12 @@ const BenefitCart: FC<CardProps> = ({
       <hr className="w-[155px] border-t border-white/30" />
       <p className="text-white text-[12px]">{description}</p>
       <Button
+      tag="a"
         background="violetGradient"
-        text="TRY IT NOW"
+        text="Try it now"
         className="h-[50px]"
+        href="#pricing"
+
       />
     </div>
   );

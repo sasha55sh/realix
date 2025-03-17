@@ -7,7 +7,10 @@ import PersonInWatch from "@/images/about-section/person-about.svg";
 const AboutSection: FC = () => {
   return (
     <>
-      <section className="container text-white flex flex-col space-y-[15px] items-center justify-between my-[60px] md:flex-row md:space-x-[60px]">
+      <section
+        id="about"
+        className="container text-white flex flex-col space-y-[15px] items-center justify-between my-[60px] md:flex-row md:space-x-[60px]"
+      >
         <h1 className="font-light uppercase md:hidden text-[36px]">
           <span className="font-bold">about </span>
           realix vr
@@ -30,8 +33,10 @@ const AboutSection: FC = () => {
             transforms daily life
           </p>
           <Button
-            text="LET'S GET IN TOUCH"
+          tag="a"
+            text="Let's get in touch"
             className="w-[70%] whitespace-nowrap lg:w-[40%]"
+            href={"#join"}
           />
         </div>
       </section>

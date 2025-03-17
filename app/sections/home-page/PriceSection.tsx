@@ -3,7 +3,6 @@ import React, { FC, useState } from "react";
 import PriceCard from "@/components/PriceCardComponent";
 import greenCheckmark from "@/images/vectors/green-checkmark.svg";
 import grayCheckmark from "@/images/vectors/gray-checkmark.svg";
-import { text } from "stream/consumers";
 
 const incompleteData = [
   { id: 1, imageSrc: greenCheckmark, text: "Type of threat" },
@@ -27,7 +26,7 @@ const PriceSection: FC = () => {
   const [isActiveButton, setIsActiveButton] = useState<string | null>("year");
 
   return (
-    <section>
+    <section id="pricing">
       <div className="text-pearlBlue flex flex-col items-center">
         <h1 className="text-[56px] font-bold">Pricing</h1>
         <p className="w-[500px] text-center">

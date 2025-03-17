@@ -56,7 +56,7 @@ const HeroSection: FC = () => {
               collaboration, Realix VR transforms daily life
             </span>
           </p>
-          <Button text="Choose your plan" background="darkGradient" />
+          <Button tag="a" text="Choose your plan" background="darkGradient" href={"#pricing"} />
         </div>
         <Image
           src={PersonImage}
@@ -66,7 +66,7 @@ const HeroSection: FC = () => {
         />
       </div>
 
-      <ul className="w-full justify-around my-[30px] bg-heroGradient p-[20px] rounded-full hidden lg:flex">
+      <ul id="contacts" className="w-full justify-around my-[30px] bg-heroGradient p-[20px] rounded-full hidden lg:flex">
         {contactData.map((item) => (
           <ContactsComponent
             key={item.id}
@@ -78,7 +78,7 @@ const HeroSection: FC = () => {
         ))}
       </ul>
 
-      <div className="h-[100px] max-w-[500px] m-auto bg-heroGradient rounded-full mt-[30px] lg:hidden">
+      <div id="contacts" className="h-[100px] max-w-[500px] m-auto bg-heroGradient rounded-full mt-[30px] lg:hidden">
         <Carousel slide={false} indicators={false}>
           {contactData.map((item) => (
             <ContactsComponent

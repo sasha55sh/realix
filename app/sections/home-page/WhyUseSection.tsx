@@ -46,7 +46,7 @@ const data = [
 
 const WhyUseSection: FC = () => {
   return (
-    <section className="container">
+    <section id="whyUse" className="container">
       <div className="flex flex-col items-center lg:justify-between lg:flex-row lg:items-end">
         <h1 className="text-white text-[36px] uppercase">
           <span className="font-bold">why use </span>

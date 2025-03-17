@@ -4,7 +4,10 @@ import { Reviews } from "@/app/data/Reviews";
 
 const ReviewsSection: FC = () => {
   return (
-    <section className="container flex flex-col text-pearlBlue items-center">
+    <section
+      id="reviews"
+      className="container flex flex-col text-pearlBlue items-center"
+    >
       <h1 className="text-[36px] font-medium lg:text-[56px]">
         Users like Realix
       </h1>

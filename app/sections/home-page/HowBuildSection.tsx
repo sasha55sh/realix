@@ -13,7 +13,7 @@ const data = [
 
 const HowBuildSection: FC = () => {
   return (
-    <section className="container">
+    <section id="howBuild" className="container">
       <div className="flex flex-col items-center lg:justify-between lg:flex-row lg:items-end">
         <h1 className="text-white text-[36px] uppercase">
           <span className="font-bold">how we build </span>
