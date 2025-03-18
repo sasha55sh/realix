@@ -17,7 +17,7 @@ const ContactsComponent: FC<ContactsProps> = ({
   description,
 }) => {
   return (
-    <li className={`${className} text-white flex space-x-[10px] items-center`}>
+    <li className={`${className} text-pearlBlue flex space-x-[10px] items-center`}>
       <Image src={src} alt={alt} className="h-[40px] w-[40px]" />
       <div>
         <h3 className="text-[18px] font-bold xl:text-[24px]">{title}</h3>

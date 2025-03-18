@@ -32,7 +32,7 @@ const additionalLink = [
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="container text-white font-bold text-default flex flex-col pt-[40px]">
+    <div className="container text-pearlBlue font-bold text-default flex flex-col pt-[40px]">
       <div className="flex flex-col w-full items-center justify-evenly mini:flex-row">
         <Link href="/">
           <Image

@@ -40,10 +40,10 @@ const Button: FC<ButtonProps> = ({
       ? "bg-darkGradient"
       : "bg-transparent";
   const disabledBg =
-    "disabled:bg-violetGradient disabled:bg-opacity-70 disabled:text-white";
+    "disabled:bg-violetGradient disabled:bg-opacity-70 disabled:text-pearlBlue";
   const textClass =
     finalBackground === "grayGradient"
-      ? "text-white"
+      ? "text-pearlBlue"
       : finalBackground === "violetGradient"
       ? "text-deepPurple"
       : bordered
@@ -74,7 +74,7 @@ const Button: FC<ButtonProps> = ({
       : bordered
       ? "hover:bg-violetGradient hover:text-deepPurple hover:border-transparent transition-colors duration-300"
       : finalBackground === "darkGradient"
-      ? "hover:text-white hover:border-pearlBlue"
+      ? "hover:text-pearlBlue hover:border-pearlBlue"
       : "";
   return (
     <Tag
