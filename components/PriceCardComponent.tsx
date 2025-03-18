@@ -21,7 +21,7 @@ const PriceCard: FC<PriceProps> = ({
 }) => {
   return (
     <div
-      className={`${className} flex flex-col items-center rounded-xl p-[30px]  bg-[#2C2D47]/60 text-pearlBlue max-w-[350px]`}
+      className={`${className} flex flex-col items-center rounded-xl p-[30px] bg-[#2C2D47]/60 text-pearlBlue max-w-[350px]`}
     >
       <p className="text-[20px]">{title}</p>
       <p className="text-[56px] font-medium">${price}</p>
@@ -37,7 +37,7 @@ const PriceCard: FC<PriceProps> = ({
       tag="a"
         background="grayGradient"
         text="Request acess"
-        className="mini:w-[80%] mb-[5px]"
+        className="mb-[5px] mini:w-[80%]"
         href={"#join"}
       />
       <p>{discount}</p>

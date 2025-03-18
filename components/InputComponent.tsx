@@ -36,7 +36,7 @@ const InputComponent: FC<InputProps> = ({
       return (
         <div className={`${className} flex flex-col w-full`}>
           <input
-            className={`${className} ${widthClass} py-[16px] px-[30px] bg-transparent text-white rounded-full focus:outline-none border-[2px] border-solid border-white`}
+            className={`${className} ${widthClass} py-[16px] px-[30px] bg-transparent text-pearlBlue rounded-full focus:outline-none border-[2px] border-solid border-pearlBlue`}
             type={type}
             placeholder={placeholder}
             pattern={pattern}
@@ -50,7 +50,7 @@ const InputComponent: FC<InputProps> = ({
           {error && (
             <p
               className="text-[14px] ml-[20px] mt-[3px]
-                text-white"
+                text-pearlBlue"
             >
               {error}
             </p>
@@ -66,7 +66,7 @@ const InputComponent: FC<InputProps> = ({
             value={value}
             disabled={disabled}
             onChange={onChange}
-            className={`${className} ${widthClass} py-[16px] px-[30px] bg-transparent text-white resize-none h-[150px] rounded-[40px] border-[2px] border-white focus:outline-none`}
+            className={`${className} ${widthClass} py-[16px] px-[30px] bg-transparent text-pearlBlue resize-none h-[150px] rounded-[40px] border-[2px] border-pearlBlue focus:outline-none`}
           />
         </>
       );

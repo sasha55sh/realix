@@ -16,7 +16,7 @@ const Header = () => {
   const HeaderNavigation: FC<{ className?: string }> = ({ className }) => {
     return (
       <div className={`${className} flex flex-row justify-between`}>
-        <nav className="hidden flex-row text-white font-bold text-[12px] lg:flex">
+        <nav className="hidden flex-row text-pearlBlue font-bold text-[12px] lg:flex">
           {navData.map((item, index) => (
             <div key={index} className="relative group mx-[15px]">
               <Button
@@ -30,15 +30,15 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="whitespace-nowrap flex gap-[15px] justify-end">
+        <div className="pearlBluespace-nowrap flex gap-[15px] justify-end">
           <Button
             tag="a"
-            text="CONTACT US"
+            text="Contact us"
             // href={"#contacts"}
             bordered
             className="hidden mini:block"
           />
-          <Button tag="a" text="JOIN REALIX" href={"#join"} background="violetGradient" />
+          <Button tag="a" text="Join Realix" href={"#join"} background="violetGradient" />
         </div>
       </div>
     );
