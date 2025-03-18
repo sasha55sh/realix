@@ -78,12 +78,12 @@ const FormSection = () => {
   };
 
   return (
-    <section id="join" className="container bg-formGradient text-white flex flex-col items-center rounded-3xl py-[40px]">
-      <h1 className="uppercase font-bold text-[36px] cursor-default">
-        join realix
+    <section id="join" className="container bg-formGradient text-pearlBlue flex flex-col items-center rounded-3xl py-[40px]">
+      <h1 className="capitalize text-[36px] cursor-default">
+       <span className="font-bold">join</span> realix
       </h1>
       <hr className="w-[200px] bg-violetGradient h-[1px] my-[10px]" />
-      <p className="text-[36px] capitalize hidden sm:block">
+      <p className="text-[28px] capitalize hidden mini:block">
         let's build your VR experience
       </p>
       <form className="grid w-full gap-[20px] mt-[30px] grid-cols-1 mini:px-[30px] sm:grid-cols-2">
@@ -129,14 +129,14 @@ const FormSection = () => {
           className="col-span-1 sm:col-span-2"
         />
         {message && (
-          <p className="col-span-1 sm:col-span-2 text-white text-center">
+          <p className="col-span-1 sm:col-span-2 text-pearlBlue text-center">
             {message}
           </p>
         )}
         <Button
-          text="SENT TO REALIX"
+          text="Send to Realix"
           onClick={handleSubmit}
-          className="col-span-1 justify-self-center whitespace-nowrap mini:w-[40%] sm:col-span-2 lg:w-[20%]"
+          className="col-span-1 justify-self-center pearlBluespace-nowrap mini:w-[40%] sm:col-span-2 lg:w-[20%]"
         />
       </form>
     </section>

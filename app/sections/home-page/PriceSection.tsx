@@ -1,35 +1,17 @@
 "use client";
 import React, { FC, useState } from "react";
 import PriceCard from "@/components/PriceCardComponent";
-import greenCheckmark from "@/images/vectors/green-checkmark.svg";
-import grayCheckmark from "@/images/vectors/gray-checkmark.svg";
-
-const incompleteData = [
-  { id: 1, imageSrc: greenCheckmark, text: "Type of threat" },
-  { id: 2, imageSrc: greenCheckmark, text: "Online presence" },
-  { id: 3, imageSrc: greenCheckmark, text: "Acess to all modules" },
-  { id: 4, imageSrc: grayCheckmark, text: "Notability" },
-  { id: 5, imageSrc: grayCheckmark, text: "Optimize existing websites" },
-  { id: 6, imageSrc: grayCheckmark, text: "Search autocomplete" },
-];
-
-const completeData = [
-  { id: 1, imageSrc: greenCheckmark, text: "Type of threat" },
-  { id: 2, imageSrc: greenCheckmark, text: "Online presence" },
-  { id: 3, imageSrc: greenCheckmark, text: "Acess to all modules" },
-  { id: 4, imageSrc: greenCheckmark, text: "Notability" },
-  { id: 5, imageSrc: greenCheckmark, text: "Optimize existing websites" },
-  { id: 6, imageSrc: greenCheckmark, text: "Search autocomplete" },
-];
+import { monthPlan, yearPlan } from "@/app/data/PriceData";
+import { Carousel } from "flowbite-react";
 
 const PriceSection: FC = () => {
   const [isActiveButton, setIsActiveButton] = useState<string | null>("year");
 
   return (
-    <section id="pricing">
+    <section id="pricing" className="my-[60px]">
       <div className="text-pearlBlue flex flex-col items-center">
-        <h1 className="text-[56px] font-bold">Pricing</h1>
-        <p className="w-[500px] text-center">
+        <h1 className="text-[36px] font-bold">Pricing</h1>
+        <p className="max-w-[495px] text-center">
           You can stay on the $56 plan until you have enough active user to
           justify managing their data or you start settings things
         </p>
@@ -56,54 +38,68 @@ const PriceSection: FC = () => {
           </button>
         </div>
       </div>
+      
       <div className="my-[30px]">
         {isActiveButton === "year" ? (
-          <div className="flex justify-evenly">
-            <PriceCard
-              title="Start here"
-              price={0}
-              period="Per month"
-              discount="It's free so why not"
-              points={incompleteData}
-            />
+          <>
+            <div className="lg:flex justify-evenly hidden">
+              {yearPlan.map((plan) => (
+                <PriceCard
+                  key={plan.id}
+                  title={plan.title}
+                  price={plan.price}
+                  discount={plan.discount}
+                  points={plan.points}
+                  period={plan.period}
+                />
+              ))}
+            </div>
 
-            <PriceCard
-              title="Single"
-              price={56}
-              period="Per month"
-              discount="Save $23 per year"
-              points={completeData}
-            />
-            <PriceCard
-              title="Family"
-              price={124}
-              period="Per month"
-              discount="Save $23 per year"
-              points={completeData}
-            />
-          </div>
+            <div className="flex h-[500px] justify-evenly max-w-[500px] m-auto lg:hidden">
+              <Carousel slide={false} indicators={false}>
+                {yearPlan.map((plan) => (
+                  <PriceCard
+                    key={plan.id}
+                    title={plan.title}
+                    price={plan.price}
+                    discount={plan.discount}
+                    points={plan.points}
+                    period={plan.period}
+                  />
+                ))}
+              </Carousel>
+            </div>
+          </>
         ) : (
-          <div className="flex justify-evenly">
-            <PriceCard
-              title="Start here"
-              price={0}
-              period="Per month"
-              points={incompleteData}
-            />
+          <>
+            <div className="lg:flex justify-evenly hidden">
+              {monthPlan.map((plan) => (
+                <PriceCard
+                  key={plan.id}
+                  title={plan.title}
+                  price={plan.price}
+                  discount={plan.discount}
+                  points={plan.points}
+                  period={plan.period}
+                />
+              ))}
+            </div>
 
-            <PriceCard
-              title="Single"
-              price={60}
-              period="Per month"
-              points={completeData}
-            />
-            <PriceCard
-              title="Family"
-              price={130}
-              period="Per month"
-              points={completeData}
-            />
-          </div>
+            <div className="flex h-[500px] justify-evenly max-w-[500px] m-auto lg:hidden">
+              <Carousel slide={false} indicators={false}>
+                {monthPlan.map((plan) => (
+                  <PriceCard
+                    key={plan.id}
+                    title={plan.title}
+                    price={plan.price}
+                    discount={plan.discount}
+                    points={plan.points}
+                    period={plan.period}
+                  />
+                ))}
+              </Carousel>
+            </div>
+          </>
         )}
       </div>
     </section>

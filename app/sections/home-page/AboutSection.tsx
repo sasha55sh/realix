@@ -9,21 +9,21 @@ const AboutSection: FC = () => {
     <>
       <section
         id="about"
-        className="container text-white flex flex-col space-y-[15px] items-center justify-between my-[60px] md:flex-row md:space-x-[60px]"
+        className="container text-pearlBlue flex flex-col space-y-[15px] items-center justify-between my-[60px] md:flex-row md:space-x-[60px]"
       >
-        <h1 className="font-light uppercase md:hidden text-[36px]">
-          <span className="font-bold">about </span>
-          realix vr
+        <h1 className="font-light text-[36px] md:hidden">
+          <span className="font-bold">About </span>
+          Realix VR
         </h1>
         <Image src={PersonInWatch} alt="Person" width={325} height={355} />
 
         <div className="flex flex-col items-center justify-center space-y-[20px] md:items-start">
-          <h1 className="font-light uppercase hidden text-[36px md:block]">
-            <span className="font-bold">about</span>
+          <h1 className="font-light hidden text-[36px] md:block">
+            <span className="font-bold">About</span>
             <br />
-            realix vr
+            Realix VR
           </h1>
-          <p className="max-w-[500px] text-[12px] mini:text-[16px] md:max-w-[630px]">
+          <p className="max-w-[495px] text-[12px] mini:text-[16px] md:max-w-[630px]">
             Realix VR Glasses redefine how people experience the world. Designed
             for innovation and comfort, they open doors to endless possibilities
             in education, entertainment, and productivity. With immersive
@@ -35,7 +35,7 @@ const AboutSection: FC = () => {
           <Button
           tag="a"
             text="Let's get in touch"
-            className="w-[70%] whitespace-nowrap lg:w-[40%]"
+            className="w-[70%] pearlBluespace-nowrap lg:w-[40%]"
             href={"#join"}
           />
         </div>

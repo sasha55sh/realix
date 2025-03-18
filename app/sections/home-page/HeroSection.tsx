@@ -2,44 +2,19 @@ import React, { FC } from "react";
 import Button from "@/components/ButtonComponent";
 import ContactsComponent from "@/components/ContactsComponent";
 import { Carousel } from "flowbite-react";
+import { contactData } from "@/app/data/ContactsData";
 
 import Image from "next/image";
 import PersonImage from "@/images/hero-section/person-in-watch.svg";
 import Background from "@/images/hero-section/background.svg";
-import Mail from "@/images/vectors/mail.svg";
-import Map from "@/images/vectors/map.svg";
-import Phone from "@/images/vectors/phone.svg";
 
-const contactData = [
-  {
-    id: 1,
-    src: Map,
-    alt: "map",
-    title: "Pay Us a Visit",
-    description: "Khreshchatyk St, Kyiv, 01001, Ukraine",
-  },
-  {
-    id: 2,
-    src: Phone,
-    alt: "phone",
-    title: "Give Us a Call",
-    description: "+380 (44) 123-45-67",
-  },
-  {
-    id: 3,
-    src: Mail,
-    alt: "mail",
-    title: "Send Us a Message",
-    description: "realix@gmail.com",
-  },
-];
 const HeroSection: FC = () => {
   return (
     <section className="container mt-[10px] relative md:mt-[70px]">
       <div className="text-pearlBlue flex flex-col justify-between items-center md:flex-row">
         <div className="flex flex-col items-center space-y-[30px] order-2 md:order-1 md:items-start">
           <h1
-            className="text-[60px] text-center font-semibold bg-clip-text text-transparent leading-none md:text-[72px] md:text-left"
+            className="text-[56px] text-center font-semibold bg-clip-text text-transparent leading-none md:text-[72px] md:text-left"
             style={{
               backgroundImage:
                 "linear-gradient(90deg, #B67EFD 32%, #F088D2 61%, #FFAD8B 10%)",
@@ -56,7 +31,12 @@ const HeroSection: FC = () => {
               collaboration, Realix VR transforms daily life
             </span>
           </p>
-          <Button tag="a" text="Choose your plan" background="darkGradient" href={"#pricing"} />
+          <Button
+            tag="a"
+            text="Choose your plan"
+            background="darkGradient"
+            href={"#pricing"}
+          />
         </div>
         <Image
           src={PersonImage}
@@ -66,7 +46,10 @@ const HeroSection: FC = () => {
         />
       </div>
 
-      <ul id="contacts" className="w-full justify-around my-[30px] bg-heroGradient p-[20px] rounded-full hidden lg:flex">
+      <ul
+        id="contacts"
+        className="w-full justify-around my-[30px] bg-heroGradient p-[20px] rounded-full hidden lg:flex"
+      >
         {contactData.map((item) => (
           <ContactsComponent
             key={item.id}
@@ -78,7 +61,10 @@ const HeroSection: FC = () => {
         ))}
       </ul>
 
-      <div id="contacts" className="h-[100px] max-w-[500px] m-auto bg-heroGradient rounded-full mt-[30px] lg:hidden">
+      <div
+        id="contacts"
+        className="h-[100px] max-w-[500px] m-auto bg-heroGradient rounded-full mt-[30px] lg:hidden"
+      >
         <Carousel slide={false} indicators={false}>
           {contactData.map((item) => (
             <ContactsComponent
