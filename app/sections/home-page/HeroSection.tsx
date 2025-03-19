@@ -17,7 +17,7 @@ const HeroSection: FC = () => {
             className="text-[56px] text-center font-semibold bg-clip-text text-transparent leading-none md:text-[72px] md:text-left"
             style={{
               backgroundImage:
-                "linear-gradient(90deg, #B67EFD 32%, #F088D2 61%, #FFAD8B 10%)",
+                "linear-gradient(35deg, #B67EFD 32%,rgb(136, 240, 238) 61%",
             }}
           >
             Improve your <br />
