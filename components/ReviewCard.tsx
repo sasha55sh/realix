@@ -25,7 +25,7 @@ const ReviewComponent: FC<reviewProps> = ({
         height={56}
         className="col-span pr-[15px]"
       />
-      <h2 className="text-[20px] font-medium pearlBluespace-nowrap self-center">
+      <h2 className="text-[20px] font-medium white-space-nowrap mini:self-center">
         {fullName}
       </h2>
       <p className="col-span-2">{review}</p>

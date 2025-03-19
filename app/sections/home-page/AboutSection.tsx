@@ -9,7 +9,7 @@ const AboutSection: FC = () => {
     <>
       <section
         id="about"
-        className="container text-pearlBlue flex flex-col space-y-[15px] items-center justify-between my-[60px] md:flex-row md:space-x-[60px]"
+        className="container text-pearlBlue flex flex-col space-y-[15px] items-center justify-between my-[60px] scroll-mt-[80px] md:flex-row md:space-x-[60px]"
       >
         <h1 className="font-light text-[36px] md:hidden">
           <span className="font-bold">About </span>
@@ -35,7 +35,7 @@ const AboutSection: FC = () => {
           <Button
           tag="a"
             text="Let's get in touch"
-            className="w-[70%] pearlBluespace-nowrap lg:w-[40%]"
+            className="w-[70%] white-space-nowrap lg:w-[40%]"
             href={"#join"}
           />
         </div>

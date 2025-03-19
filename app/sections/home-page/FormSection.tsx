@@ -78,7 +78,7 @@ const FormSection = () => {
   };
 
   return (
-    <section id="join" className="container bg-formGradient text-pearlBlue flex flex-col items-center rounded-3xl py-[40px]">
+    <section id="join" className="container bg-formGradient text-pearlBlue flex flex-col items-center rounded-3xl py-[40px] scroll-mt-[80px]">
       <h1 className="capitalize text-[36px] cursor-default">
        <span className="font-bold">join</span> realix
       </h1>
@@ -136,7 +136,7 @@ const FormSection = () => {
         <Button
           text="Send to Realix"
           onClick={handleSubmit}
-          className="col-span-1 justify-self-center pearlBluespace-nowrap mini:w-[40%] sm:col-span-2 lg:w-[20%]"
+          className="col-span-1 justify-self-center white-space-nowrap mini:w-[40%] sm:col-span-2 lg:w-[20%]"
         />
       </form>
     </section>

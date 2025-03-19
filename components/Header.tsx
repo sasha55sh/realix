@@ -30,11 +30,11 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="pearlBluespace-nowrap flex gap-[15px] justify-end">
+        <div className="white-space-nowrap flex gap-[15px] justify-end">
           <Button
             tag="a"
             text="Contact us"
-            // href={"#contacts"}
+            href={"#contacts"}
             bordered
             className="hidden mini:block"
           />
