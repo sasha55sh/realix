@@ -27,18 +27,16 @@ const ReviewsSection: FC = () => {
         ))}
       </div>
 
-      {/* <div className="h-[300px] max-w-[400px] m-auto lg:hidden">
-        <Carousel slide={false} indicators={false}>
-          {reviews.map((review) => (
-            <ReviewCard
-              key={review.id}
-              review={review.review}
-              fullName={review.fullName}
-              imageSrc={review.image}
-            />
-          ))}
-        </Carousel>
-      </div> */}
+      <div className="md:hidden grid grid-cols-2 grid-rows-2 gap-[15px] mt-[15px]">
+        {reviews.slice(0, 4).map((review) => (
+          <ReviewCard
+            key={review.id}
+            review={review.review}
+            fullName={review.fullName}
+            imageSrc={review.image}
+          />
+        ))}
+      </div>
     </section>
   );
 };
