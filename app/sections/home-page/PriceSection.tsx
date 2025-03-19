@@ -8,7 +8,7 @@ const PriceSection: FC = () => {
   const [isActiveButton, setIsActiveButton] = useState<string | null>("year");
 
   return (
-    <section id="pricing" className="my-[60px]">
+    <section id="pricing" className="container my-[60px] scroll-mt-[80px]">
       <div className="text-pearlBlue flex flex-col items-center">
         <h1 className="text-[36px] font-bold">Pricing</h1>
         <p className="max-w-[495px] text-center">

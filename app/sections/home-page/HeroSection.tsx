@@ -48,7 +48,7 @@ const HeroSection: FC = () => {
 
       <ul
         id="contacts"
-        className="w-full justify-around my-[30px] bg-heroGradient p-[20px] rounded-full hidden lg:flex"
+        className="w-full justify-around my-[30px] bg-heroGradient p-[20px] rounded-full hidden scroll-my-[100px] lg:flex"
       >
         {contactData.map((item) => (
           <ContactsComponent
@@ -63,7 +63,7 @@ const HeroSection: FC = () => {
 
       <div
         id="contacts"
-        className="h-[100px] max-w-[500px] m-auto bg-heroGradient rounded-full mt-[30px] lg:hidden"
+        className="h-[100px] max-w-[500px] m-auto bg-heroGradient rounded-full mt-[30px] scroll-mt-[100px] lg:hidden"
       >
         <Carousel slide={false} indicators={false}>
           {contactData.map((item) => (

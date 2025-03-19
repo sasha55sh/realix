@@ -7,7 +7,7 @@ const ReviewsSection: FC = () => {
   return (
     <section
       id="reviews"
-      className="container flex flex-col text-pearlBlue items-center"
+      className="container flex flex-col text-pearlBlue items-center scroll-mt-[80px]"
     >
       <h1 className="text-[36px]">
         <span className="font-bold"> Users like </span>

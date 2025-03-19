@@ -7,7 +7,7 @@ import Arrow from "@/images/vectors/right-arrow.svg";
 
 const WhyUseSection: FC = () => {
   return (
-    <section id="whyUse" className="container">
+    <section id="whyUse" className="container scroll-mt-[80px]">
       <div className="flex flex-col items-center lg:justify-between lg:flex-row lg:items-end">
         <h1 className="text-pearlBlue text-[36px]">
           <span className="font-bold">Why use </span>

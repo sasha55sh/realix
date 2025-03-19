@@ -14,7 +14,7 @@ const data = [
 
 const HowBuildSection: FC = () => {
   return (
-    <section id="howBuild" className="container my-[60px]">
+    <section id="howBuild" className="container my-[60px] scroll-mt-[80px]">
       <div className="flex flex-col items-center lg:justify-between lg:flex-row lg:items-end">
         <h1 className="text-pearlBlue text-[36px] text-center lg:text-start">
           <span className="font-bold">How we build </span>
