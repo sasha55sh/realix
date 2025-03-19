@@ -9,9 +9,9 @@ const WhyUseSection: FC = () => {
   return (
     <section id="whyUse" className="container scroll-mt-[80px]">
       <div className="flex flex-col items-center lg:justify-between lg:flex-row lg:items-end">
-        <h1 className="text-pearlBlue text-[36px]">
+        <h1 className="text-pearlBlue text-[36px] text-center lg:text-start">
           <span className="font-bold">Why use </span>
-          <span className="lg:block">Realix VR?</span>
+          <span className="lg:block">Realix?</span>
         </h1>
         <Image src={Arrow} alt="right-arrow" className="hidden xl:block" />
         <p className="hidden max-w-[495px] text-[16px] text-pearlBlue w-full sm:block md:max-w-[650px]">

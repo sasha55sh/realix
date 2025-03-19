@@ -42,7 +42,7 @@ const PriceSection: FC = () => {
       <div className="my-[30px]">
         {isActiveButton === "year" ? (
           <>
-            <div className="lg:flex justify-evenly hidden">
+            <div className="lg:flex justify-between hidden">
               {yearPlan.map((plan) => (
                 <PriceCard
                   key={plan.id}
@@ -55,7 +55,7 @@ const PriceSection: FC = () => {
               ))}
             </div>
 
-            <div className="flex h-[500px] justify-evenly max-w-[500px] m-auto lg:hidden">
+            <div className="flex h-[500px] justify-between max-w-[500px] m-auto lg:hidden">
               <Carousel slide={false} indicators={false}>
                 {yearPlan.map((plan) => (
                   <PriceCard
@@ -72,7 +72,7 @@ const PriceSection: FC = () => {
           </>
         ) : (
           <>
-            <div className="lg:flex justify-evenly hidden">
+            <div className="lg:flex justify-between hidden">
               {monthPlan.map((plan) => (
                 <PriceCard
                   key={plan.id}
@@ -85,7 +85,7 @@ const PriceSection: FC = () => {
               ))}
             </div>
 
-            <div className="flex h-[500px] justify-evenly max-w-[500px] m-auto lg:hidden">
+            <div className="flex h-[500px] justify-between max-w-[500px] m-auto lg:hidden">
               <Carousel slide={false} indicators={false}>
                 {monthPlan.map((plan) => (
                   <PriceCard
